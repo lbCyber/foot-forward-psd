@@ -1,0 +1,494 @@
+/*  Base Styles */
+html {
+  font: 125% "Catamaran", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #1f2022;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #186684;
+}
+
+a:hover,
+a.currentPage {
+  color: #e85b26;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+h2,
+h4 {
+  font-family: "Nova Flat", cursive;
+}
+
+h1,
+h2,
+h3 {
+  color: #186684;
+}
+
+h1 {
+  font-size: 7.3rem;
+  line-height: 6.2rem;
+}
+
+h2,
+h4 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: #e85b26;
+  margin-bottom: .6rem;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0;
+}
+
+.reactiveOn {
+  display: none;
+}
+
+/*  Header  */
+header {
+  background-image: url("../assets/shoePattern.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.headerTitleText {
+  background-color: rgba(227, 228, 234, 0.89);
+  top: 45%;
+  display: block;
+  padding: 0.1rem;
+  position: absolute;
+  right: 22%;
+  width: 4em;
+}
+
+.topNav {
+  font: 1em "Nova Flat", cursive;
+  padding-top: 1.8rem;
+}
+
+.topNav ul {
+  width: 22em;
+}
+
+.topNav li {
+  float: left;
+  width: 5em;
+  text-align: center;
+}
+
+.headerSocialButtons {
+  float: right;
+  margin: calc(50vh - 5rem) 2% 0 0;
+}
+
+.headerSocialButtons a {
+  color: #e85b26;
+  font-size: 1.1em;
+}
+
+.headerSocialButtons a:hover {
+  color: #186684;
+}
+
+.mobileButton {
+  display: none;
+}
+
+/*  About Section  */
+.about {
+  height: 100%;
+}
+
+.aboutBox {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+
+.aboutBoxImage {
+  height: 100%;
+}
+
+.aboutBoxImage img {
+  display: block;
+}
+
+.aboutBoxText {
+  margin: 20% 0 0;
+  width: 80%;
+}
+
+.aboutBox1 {
+  padding-left: 10%;
+  float: left;
+}
+
+.aboutBox2 {
+  float: right;
+}
+
+.aboutBox3 {
+  clear: both;
+}
+
+.aboutBox4 {
+  padding-left: 6%;
+}
+
+.readMore {
+  border: 3px solid #e85b26;
+  background-color: #fff;
+  font: 1em "Nova Flat", cursive;
+  color: #186684;
+  text-transform: uppercase;
+  padding: 0.6rem 0.8rem;
+  width: 9em;
+  float: left;
+  text-align: center;
+}
+
+.readMore:hover,
+.readMore:hover a,
+.readMore a:hover {
+  background-color: #e85b26;
+  color: #FFF;
+}
+
+/*  Blog  */
+.blogArticle {
+  background-color: #f4f4f4;
+  height: 530px;
+  padding: 6% 10%;
+}
+
+.blogPic {
+  height: 315px;
+  width: 315px;
+  float: left;
+  margin-right: 50px;
+}
+
+/*  Middle Nav Section  */
+.middleNav {
+  background-image: url("../assets/shoePatternWhite.jpg");
+  background-size: cover;
+  height: 500px;
+  padding-top: 8%;
+}
+
+.middleNavList {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  width: 55%;
+  padding: 4rem;
+  text-align: center;
+}
+
+.middleNavItem {
+  color: #e85b26;
+  font-size: 2em;
+  width: calc(100% / 3);
+  margin: 0;
+  float: left;
+}
+
+/*  Gallery */
+.gallerySection h2 {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.gallery {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+.gallery img {
+  width: calc((100% / 3) - 4%);
+  float: left;
+  margin: 0 2%;
+}
+
+/*  Footer  */
+.contact:not(.bottomFooter) {
+  background-color: #f4f4f4;
+}
+
+.bottomFooter {
+  background-color: #000;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: .8em;
+  padding: 10px 0;
+  clear: both;
+}
+
+.bottomFooter p {
+  margin: 0;
+}
+
+.footerNav {
+  margin: 0 auto;
+  padding: 0;
+  width: 19em;
+  font-family: "Nova Flat", cursive;
+}
+
+.footerNav a:not(.currentPage) {
+  color: #1f2022;
+}
+
+.footerNav a:hover {
+  color: #e85b26;
+}
+
+.footerNav li {
+  float: left;
+  width: 4.5em;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.footerBox {
+  float: left;
+  width: calc(50% - 8rem);
+  margin: 0;
+}
+
+.footerContact {
+  margin: 0 0 4rem 8rem;
+}
+
+.footerContact p {
+  margin: 0;
+}
+
+.footerForm input {
+  width: 70%;
+  margin: 0;
+  float: left;
+  height: 2rem;
+  padding-left: 1rem;
+}
+
+.footerForm button {
+  width: 30%;
+  float: left;
+  border: 3px solid #e85b26;
+  background-color: #186684;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Nova Flat", cursive;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1280px;
+  }
+
+  .about,
+  .blog {
+    font-size: 90%;
+    line-height: 1.5em;
+  }
+
+  .aboutBoxText {
+    margin: 20% 0 0;
+    width: 90%;
+  }
+
+  .aboutBox1 {
+    padding-left: 5%;
+  }
+
+  .blog {
+    height: 480px;
+  }
+
+  .blogArticle {
+    font-size: 90%;
+    line-height: 1.5em;
+    padding: 8%;
+  }
+
+  .middleNavList {
+    width: 75%;
+  }
+
+  .middleNavItem h3 {
+    font-size: 1.2rem;
+  }
+
+  .footerContact {
+    margin: 0 0 4rem 6rem;
+  }
+
+  .footerBox {
+    width: calc(50% - 6rem);
+    font-size: 90%;
+  }
+
+  .footerBox p {
+    line-height: 1.2rem;
+  }
+
+  .footerForm input {
+    float: none;
+    width: 100%;
+  }
+
+  .footerForm button {
+    float: none;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+
+  .reactiveOff1024 {
+    display: none;
+  }
+
+  .headerTitleText {
+    top: 50%;
+    right: 15%;
+    font-size: 6rem;
+    line-height: 5.5rem;
+  }
+
+  .aboutBox {
+    width: 100%;
+  }
+
+  .aboutBox1,
+  .aboutBox4 {
+    padding: 0;
+  }
+
+  .aboutBoxImage {
+    height: 480px;
+    overflow: hidden;
+  }
+
+  .aboutBoxText {
+    margin: 10%;
+    width: 80%;
+  }
+
+  .readMore:not(.blogButton) {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .blogButton {
+    width: 50%;
+    float: left;
+  }
+
+  .gallery img {
+    width: 46%;
+  }
+
+  .footerNav li {
+    padding: 4rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reactiveOff768 {
+    display: none;
+  }
+
+  .reactiveOn768 {
+    display: initial;
+  }
+
+  .mobileBars {
+    float: right;
+    font-size: 2.5rem;
+    color: #666;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem 4rem 0 0;
+  }
+
+  input.mobileButtonCheckbox {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .mobileButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .topNav {
+    padding-top: 0;
+    background-color: rgba(227, 228, 234, 0.89);
+    height: 100vh;
+    position: relative;
+    right: -100%;
+    z-index: 10;
+  }
+
+  .topNav ul {
+    padding-left: 0;
+  }
+
+  .topNav li {
+    text-align: center;
+    float: none;
+    font-size: 3rem;
+    line-height: 5rem;
+    margin: 0 auto;
+    height: 25vh;
+  }
+
+  header~.mobileButtonCheckbox:checked nav.topNav {
+    right:0;
+  }
+
+}
