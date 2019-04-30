@@ -23,14 +23,9 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 400;
   margin: 0;
-}
-
-h1,
-h2,
-h4 {
   font-family: "Nova Flat", cursive;
+  font-weight: 400;
 }
 
 h1,
@@ -197,8 +192,7 @@ header {
 }
 
 .blogPic {
-  height: 315px;
-  width: 315px;
+  height: 100%;
   float: left;
   margin-right: 50px;
 }
@@ -207,8 +201,7 @@ header {
 .middleNav {
   background-image: url("../assets/shoePatternWhite.jpg");
   background-size: cover;
-  height: 500px;
-  padding-top: 8%;
+  padding: 8% 0;
 }
 
 .middleNavList {
@@ -305,6 +298,8 @@ header {
   float: left;
   height: 2rem;
   padding-left: 1rem;
+  background-color: #fff;
+  border: none;
 }
 
 .footerForm button {
@@ -338,15 +333,6 @@ header {
     padding-left: 5%;
   }
 
-  .blog {
-    height: 480px;
-  }
-
-  .blogArticle {
-    font-size: 90%;
-    line-height: 1.5em;
-    padding: 8%;
-  }
 
   .middleNavList {
     width: 75%;
@@ -406,13 +392,18 @@ header {
     padding: 0;
   }
 
+  .aboutBox2 {
+    margin-top: 10%;
+  }
+
   .aboutBoxImage {
-    height: 480px;
+    height: 350px;
     overflow: hidden;
+    padding: 0 10%;
   }
 
   .aboutBoxText {
-    margin: 10%;
+    margin: 5% 10%;
     width: 80%;
   }
 
@@ -421,9 +412,22 @@ header {
     float: none;
   }
 
+  .blogArticle {
+    font-size: 90%;
+    line-height: 1.5em;
+    padding: 8%;
+    height: 480px;
+  }
+
+  .blogArticle p,
+  .blogArticle h2,
   .blogButton {
     width: 50%;
-    float: left;
+    float: right;
+  }
+
+  .blogPic {
+    margin-right: 0;
   }
 
   .gallery img {
@@ -436,6 +440,11 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .wrapper {
+    max-width: 768px;
+  }
+
   .reactiveOff768 {
     display: none;
   }
@@ -447,7 +456,7 @@ header {
   .mobileBars {
     float: right;
     font-size: 2.5rem;
-    color: #666;
+    color: #186684;
     width: 2rem;
     height: 2rem;
     padding: 1rem 4rem 0 0;
@@ -487,8 +496,79 @@ header {
     height: 25vh;
   }
 
-  header~.mobileButtonCheckbox:checked nav.topNav {
-    right:0;
+  .aboutBoxImage {
+    width: 100%;
+    padding: 0;
+  }
+
+  .aboutBox2 {
+    margin-top: 0;
+  }
+
+  .aboutBoxText {
+    margin-bottom: 8%;
+  }
+
+  .blogArticle {
+    height: unset;
+  }
+
+  .blogPic,
+  .blogArticle p,
+  .blogArticle h2 {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .blogArticle h2 {
+    margin: 3rem auto 2rem;
+    text-align: center;
+  }
+
+  .blogButton {
+    width: 50%;
+    float:none;
+    margin: 2rem auto;
+  }
+
+  .middleNavList {
+    width: 400px;
+  }
+
+  .middleNavItem {
+    width:100%;
+    margin: 1rem auto;
+    float:none;
+    text-align: center;
+  }
+
+  .footerBox {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footerBox {
+    margin-bottom: 1.5rem;
+  }
+
+  .footerForm {
+    margin-top: 3rem;
+  }
+
+  .footerForm p {
+    margin-top: 1.5rem;
+  }
+
+  .footerForm form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footerForm input {
+    margin-bottom: 5px;
   }
 
 }
