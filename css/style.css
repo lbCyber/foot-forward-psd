@@ -201,7 +201,7 @@ header {
 }
 
 .blogPic {
-  height:100%;
+  width:315px;
   float:left;
   margin-right:50px;
 }
@@ -521,15 +521,16 @@ header {
 
   .topNav {
     padding-top:0;
-    background-color:rgba(227,228,234,.89);
     height:100vh;
-    position:absolute;
-    right:-120%;
-    z-index:10;
   }
-
+  
   .topNav ul {
+    background-color:rgba(227,228,234,.89);
     padding-left:0;
+    position:absolute;
+    right:-150%;
+    z-index:10;
+    height:100vh;
   }
 
   .topNav li {
@@ -569,6 +570,7 @@ header {
     float:none;
     margin-left:auto;
     margin-right:auto;
+    max-width:
   }
 
   .blogArticle h2 {
@@ -660,6 +662,10 @@ header {
   }
 
   /*  Blog 420px  */
+
+  .blogArticle p {
+    width:100%;
+  }
 
   .blogPic {
     width:100%;
