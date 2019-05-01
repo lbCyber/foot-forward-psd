@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css?family=Catamaran|Nova+Flat" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Paul Rocca - Project 1</title>
 </head>
@@ -18,8 +17,8 @@
     <div class="wrapper">
       <div class="mobileButton reactiveOn reactiveOn768">
         <input type="checkbox" name="mobileButtonCheckbox" id="mobileButtonCheckbox" id="mobileButtonCheckbox"
-          class="mobileButtonCheckbox">
-        <label for="mobileButtonCheckbox" name="mobileBars" id="mobileBars" class="mobileBars"><i
+          class="mobileButtonCheckbox" aria-hidden="true">
+        <label for="mobileButtonCheckbox" name="mobileBars" id="mobileBars" class="mobileBars"  aria-hidden="true"><i
             class="fas fa-bars"></i></label>
       </div>
       <nav class="topNav">
@@ -31,10 +30,10 @@
         </ul>
       </nav>
       <ul class="headerSocialButtons reactiveOff reactiveOff768">
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram" title="Share on Instagram"><span class="srOnly">Share on Instagram</span></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook" title="Share on Facebook"><span class="srOnly">Share on Facebook</span></i></a></li>
+        <li><a href="#"><i class="fab fa-snapchat-ghost" title="Share on Snapchat"><span class="srOnly">Share on Snapchat</span></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter" title="Share on Twitter"><span class="srOnly">Share on Twitter</span></i></a></li>
       </ul>
       <h1 class="headerTitleText">Foot Forward</h1>
     </div>
@@ -54,7 +53,7 @@
         </div>
       </figure>
       <figure class="aboutBox3 aboutBox aboutBoxImage">
-        <img src="./assets/shoeHover.jpg" alt="The one holy shoe, vangard of sportsball, praise be its name">
+        <img src="./assets/shoeHover.jpg" alt="The one holy shoe, vangard of sportsball, praise be unto its name">
       </figure>
       <figure class="aboutBox4 aboutBox">
         <div class="aboutBoxText">
@@ -71,7 +70,7 @@
     <div class="wrapper">
       <article class="blogArticle">
         <div class="blogPic">
-          <img src="./assets/runningShoes.jpg" alt="[David Attenborough voice] The shoes collect themselves at the watering hole for a quick drink. A moment's respite in safety from the land's predators.">
+          <img src="./assets/runningShoes.jpg" alt="[David Attenborough voice] The shoes collect themselves at the watering hole for a quick drink. A moment's respite in safety from the predators lurking about.">
         </div>
         <h2>Giving Back</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat molestias fugit. Explicabo adipisci
@@ -87,16 +86,16 @@
     <div class="wrapper">
       <ul class="middleNavList clearfix">
         <li class="middleNavItem">
-          <i class="fas fa-shopping-bag"></i>
-          <h3>Products</h3>
+          <a href="#"><i class="fas fa-shopping-bag" aria-hidden="true" title="Products"></i>
+          <h3>Products</h3></a>
         </li>
         <li class="middleNavItem">
-          <i class="fas fa-users"></i>
-          <h3>Community</h3>
+          <a href="#"><i class="fas fa-users" aria-hidden="true" title="Community"></i>
+          <h3>Community</h3></a>
         </li>
         <li class="middleNavItem">
-          <i class="fas fa-phone"></i>
-          <h3>Reach Out</h3>
+          <a href="#"><i class="fas fa-phone" aria-hidden="true" title="Reach Out"></i>
+          <h3>Reach Out</h3></a>
         </li>
       </ul>
     </div>
