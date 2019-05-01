@@ -57,6 +57,10 @@ img {
   width: 100%;
 }
 
+input:required {
+  box-shadow:none;
+}
+
 ul {
   list-style: none;
   margin: 0 auto;
@@ -66,6 +70,7 @@ ul {
   margin: 0 auto;
   max-width: 1600px;
   padding: 0;
+  position:relative;
 }
 
 .reactiveOn {
@@ -83,11 +88,11 @@ header {
 
 .headerTitleText {
   background-color: rgba(227, 228, 234, 0.89);
-  top: 45%;
+  top: 40vh;
   display: block;
-  padding: 0.1rem;
+  padding: 1rem;
   position: absolute;
-  right: 22%;
+  right: 20vw;
   width: 4em;
 }
 
@@ -318,6 +323,10 @@ header {
     max-width: 1280px;
   }
 
+  .headerTitleText {
+    right:8vw;
+  }
+
   .about,
   .blog {
     font-size: 90%;
@@ -377,8 +386,6 @@ header {
   }
 
   .headerTitleText {
-    top: 50%;
-    right: 15%;
     font-size: 6rem;
     line-height: 5.5rem;
   }
@@ -441,6 +448,10 @@ header {
 
 @media only screen and (max-width: 768px) {
 
+  h2, h4 {
+    font-size:1.7rem;
+  }
+
   .wrapper {
     max-width: 768px;
   }
@@ -460,6 +471,14 @@ header {
     width: 2rem;
     height: 2rem;
     padding: 1rem 4rem 0 0;
+    transform: scaleY(0.7);
+  }
+
+  .headerTitleText {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    padding: 1rem;
+    width: 20.5rem;
   }
 
   input.mobileButtonCheckbox {
@@ -478,8 +497,8 @@ header {
     padding-top: 0;
     background-color: rgba(227, 228, 234, 0.89);
     height: 100vh;
-    position: relative;
-    right: -100%;
+    position: absolute;
+    right: -120%;
     z-index: 10;
   }
 
@@ -506,7 +525,9 @@ header {
   }
 
   .aboutBoxText {
-    margin-bottom: 8%;
+    margin: 5% auto 8%;
+    text-align: center;
+    width: 90%;
   }
 
   .blogArticle {
@@ -514,11 +535,17 @@ header {
   }
 
   .blogPic,
-  .blogArticle p,
-  .blogArticle h2 {
+  .blogArticle p {
     width: 80%;
     float: none;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blogArticle h2 {
+    margin: 5% auto 0;
+    float:none;
+    width:80%;
   }
 
   .blogArticle h2 {
@@ -569,6 +596,39 @@ header {
 
   .footerForm input {
     margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+
+  .wrapper {
+    max-width: 460px;
+    min-width: 360px;
+  }
+
+  .home {
+    background-position:35%;
+  }
+
+  .headerTitleText {
+    font-size: 3.5rem;
+    line-height:3.5rem;
+    width:15rem;
+    top:15rem;
+    right:1rem;
+  }
+
+  .blogPic {
+    width:100%;
+  }
+
+  .middleNavList {
+    padding:3rem;
+    width:70%;
+  }
+
+  .footerNav li {
+    padding: 4rem 0;
   }
 
 }
